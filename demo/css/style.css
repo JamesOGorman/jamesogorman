@@ -437,19 +437,28 @@ body {
 
 }
 
+.section-header {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  color: #B91327;
+  font-size: 3.5em;
+}
 
 
-#about-div {
+
+
+/* possible code to be deleted if page isnt affected  */
+/* #about-div {
   padding-top: 50px;
   background-color: #0D2130;
   display: flex;
   justify-content: center;
-}
+} */
 
-#about-header {
+/* #about-header {
   color: #B91327;
-  font-size: 5vw;
-}
+  font-size: 3.5em;
+} */
 
 
 
@@ -496,28 +505,34 @@ body {
 }
 
 
-/* #projects-outer-container {
-  padding-top: 50px;
-  padding-bottom: 400px;
-  height: 210vh;
-  background-color: #0D2130;
-} */
+#projects-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: auto;
+  min-height: 100px;
+  /* background-color: #B91327; */
+}
 
 
 #projects-header {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 5vw;
-  color: #B91327;
+  /* font-size: 5vw;
+  color: #B91327; */
 }
 
-.project-container {
+.project-window {
   border: solid 5px transparent;
   border-image: linear-gradient(243deg, rgba(13, 33, 48, 1) 0%, rgba(255, 253, 247, 1) 47%, rgba(13, 33, 48, 1) 100%);
   border-image-slice: 1;
-  height: 200px;
-  /* background-color: #063535; */
+  width: 90vw;
+  height: 300px;
+  min-height: 300px;
+  background-color: #063535;
   margin: 10px;
 }
 
@@ -530,18 +545,20 @@ body {
   color: #ccc;
   height: 100%;
   background-color: #0D2130;
+  background-color: #475763;
 }
 
 #contact-div {
+  margin-top: 101px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-#contact-header {
+/* #contact-header {
   font-size: 5vw;
   color: #B91327;
-}
+} */
 
 #contact-container {
   display: flex;
@@ -549,6 +566,7 @@ body {
   align-items: center;
   justify-content: center;
   text-align: center;
+  /* background: #13E8E9; */
 }
 
 #contact-paragraph {
@@ -649,7 +667,8 @@ input {
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 50vh;
+    height: 100vh;
+    min-height: 600px;
     background-color: #0D2130;
     font-weight: 15px;
   }
@@ -664,7 +683,8 @@ input {
     flex-direction: row; */
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 100vh;
+    min-height: 600px;
     width: 100vw;
     background-color: #0D2130;
     /* background-color: #1c4564; */
@@ -673,9 +693,7 @@ input {
   #about-paragraph {
     padding: 50px;
     padding-bottom: 0px;
-    /* margin-left: 50px; */
-    /* margin-right: 100px; */
-    font-size: 3.5vw;
+    font-size: 1.5em;
   }
 
   .img-container {
@@ -764,9 +782,7 @@ input {
 
   #about-paragraph {
     padding: 50px;
-    /* margin-left: 50px; */
-    /* margin-right: 100px; */
-    font-size: 2.5vw;
+    font-size: 1.5em;
   }
 
   .img-container {
@@ -820,13 +836,16 @@ input {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 950px) {
-  #outer-container {
-    padding-top: 50px;
+  #exp-flex-container {
     display: flex;
     flex-direction: row;
+    height: 100vh;
+    /* width: 100vw; */
+    background-color: #13E8E9;
   }
 
   #about-container {
+
     color: #ccc;
     display: flex;
     flex-direction: column;
@@ -835,10 +854,12 @@ input {
     padding-left: 20px;
     padding-right: 20px;
     width: 50vw;
-    height: 70vh;
+    height: 100vh;
+    min-height: 600px;
     background-color: #0D2130;
     /* background-color: #34556e; */
     font-weight: 15px;
+
   }
 
   #experience-container {
@@ -848,12 +869,10 @@ input {
       "midbar midbar midbar"
       "btmbar btmbar btmbar";
     grid-column-end: auto;
-    /* display: flex;
-    flex-wrap: wrap;
-    flex-direction: row; */
     justify-content: center;
     align-items: center;
-    height: 80vh;
+    height: 100vh;
+    min-height: 600px;
     width: 50vw;
     background-color: #0D2130;
     /* background-color: #1c4564; */
@@ -861,7 +880,7 @@ input {
 
   #about-paragraph {
     padding-top: 50px;
-    font-size: 2vw;
+    font-size: 1.5em;
   }
 
   .img-container {

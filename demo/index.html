@@ -28,7 +28,7 @@
     <div class="header">
       <h1 id="header-top">Hello, I'm <span id="james">James</span>.</h1>
       <h1 id="header-bottom">Im a front-end web developer</h1>
-      <button class="projects-btn"><a href="#about-header">View My Projects</a></button>
+      <button class="projects-btn"><a href="#navbar">More About Me</a></button>
     </div>
     <!-- /////////////////////////////// -->
     <!-- put in html above  here to edit inside particles  -->
@@ -37,7 +37,7 @@
   <div id="navbar">
     <ul>
       <li><a id="home-link" href="#home-anchor">Home</a></li>
-      <li><a id="about-link" href="#about-header">About</a></li>
+      <li><a id="about-link" href="#navbar">About</a></li>
       <li><a id="projects-link" href="#projects-header">Projects</a></li>
       <li><a id="contact-link" href="#contact-header">Contact</a></li>
     </ul>
@@ -47,7 +47,7 @@
 
   <div id="exp-flex-container">
     <div id="about-container">
-      <h1 id="about-header">About Me</h1>
+      <h1 class="section-header" id="about-header">About Me</h1>
 
       <img id="avatar-img" src="/demo/images/myPhoto.jpg" alt="">
       <p id="about-paragraph">I'm a highly motivated and enthusiastic self thought front end developer on the road to
@@ -57,52 +57,53 @@
         I love the the creativity and problem solving of web development and how theres always something new and
         interesting to do and learn. Outside of coding I enjoy keeping fit, playing the guitar and cooking.
       </p>
-      <div id="experience-container">
-        <div class="img-container" id="html-container">
-          <img class="exp-img" id="html-img" src="/demo/images/htmlLogo.png" alt="html">
-          <p class="img-p">HTML</p>
-        </div>
-        <div class="img-container" id="css-container">
-          <img class="exp-img" id="css-img" src="/demo/images/cssLogo.png" alt="css">
-          <p class="img-p">CSS</p>
-        </div>
-        <div class="img-container" id="js-container">
-          <img class="exp-img" id="js-img" src="/demo/images/javascriptLogo.png" alt="javascript">
-          <p class="img-p">JavaScript</p>
-
-        </div>
-        <div class="img-container" id="react-container">
-          <img class="exp-img" id="react-img" src="/demo/images/reactLogo.png" alt="react">
-          <p class="img-p">React</p>
-        </div>
-        <!-- empty skill boxes for later -->
-        <div class="img-container" id="react-container">
-          <img class="exp-img" id="react-img" src="/demo/images/gitLogo.png" alt="react">
-          <p class="img-p">Git</p>
-        </div>
-        <div class="img-container" id="react-container">
-          <img class="exp-img" id="react-img" src="/demo/images/githubLogo.png" alt="react">
-          <p class="img-p">GitHub</p>
-        </div>
-        <div class="img-container" id="react-container">
-          <img class="exp-img" id="react-img" src="/demo/images/reactLogo.png" alt="react">
-          <p class="img-p">React</p>
-        </div>
-        <div class="img-container" id="react-container">
-          <img class="exp-img" id="react-img" src="/demo/images/reactLogo.png" alt="react">
-          <p class="img-p">React</p>
-        </div>
-        <div class="img-container" id="react-container">
-          <img class="exp-img" id="react-img" src="/demo/images/reactLogo.png" alt="react">
-          <p class="img-p">react</p>
-        </div>
-      </div>
-
-
     </div>
+    <div id="experience-container">
+      <div class="img-container" id="html-container">
+        <img class="exp-img" id="html-img" src="/demo/images/htmlLogo.png" alt="html">
+        <p class="img-p">HTML</p>
+      </div>
+      <div class="img-container" id="css-container">
+        <img class="exp-img" id="css-img" src="/demo/images/cssLogo.png" alt="css">
+        <p class="img-p">CSS</p>
+      </div>
+      <div class="img-container" id="js-container">
+        <img class="exp-img" id="js-img" src="/demo/images/javascriptLogo.png" alt="javascript">
+        <p class="img-p">JavaScript</p>
+
+      </div>
+      <div class="img-container" id="react-container">
+        <img class="exp-img" id="react-img" src="/demo/images/reactLogo.png" alt="react">
+        <p class="img-p">React</p>
+      </div>
+      <!-- empty skill boxes for later -->
+      <div class="img-container" id="react-container">
+        <img class="exp-img" id="react-img" src="/demo/images/gitLogo.png" alt="react">
+        <p class="img-p">Git</p>
+      </div>
+      <div class="img-container" id="react-container">
+        <img class="exp-img" id="react-img" src="/demo/images/githubLogo.png" alt="react">
+        <p class="img-p">GitHub</p>
+      </div>
+      <div class="img-container" id="react-container">
+        <img class="exp-img" id="react-img" src="/demo/images/reactLogo.png" alt="react">
+        <p class="img-p">React</p>
+      </div>
+      <div class="img-container" id="react-container">
+        <img class="exp-img" id="react-img" src="/demo/images/reactLogo.png" alt="react">
+        <p class="img-p">React</p>
+      </div>
+      <div class="img-container" id="react-container">
+        <img class="exp-img" id="react-img" src="/demo/images/reactLogo.png" alt="react">
+        <p class="img-p">react</p>
+      </div>
+    </div>
+
+
+
   </div>
   <div id="projects-container">
-    <h1 id="projects-header">Projects</h1>
+    <h1 class="section-header" id="projects-header">Projects</h1>
     <div class="project-window" id="project-1-container"></div>
     <div class="project-window" id="project-2-container"></div>
     <div class="project-window" id="project-3-container"></div>
@@ -111,7 +112,7 @@
 
   <div id="contact-outer-container">
     <div id="contact-div">
-      <h1 id="contact-header">Contact Me</h1>
+      <h1 class="section-header" id="contact-header">Contact Me</h1>
     </div>
     <div id="contact-container">
       <p id="contact-paragraph">If you have any questions or would like to work together leave your details below and
