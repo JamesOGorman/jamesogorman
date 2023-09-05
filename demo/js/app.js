@@ -134,4 +134,9 @@ particlesJS('particles-js',
 
 // my javascript starts here
 
-// adkjnfdg;dkfnjda;knjad
+const navbar = document.getElementById('navbar')
+const anchor = document.getElementById('anchor')
+
+if (navbar.style.overflow = 0) {
+  console.log('navbar height 0')
+}
