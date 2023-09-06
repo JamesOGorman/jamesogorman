@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>particles.js</title>
+  <title>James O Gorman</title>
   <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
   <meta name="author" content="Vincent Garreau" />
   <meta name="viewport"
@@ -45,7 +45,7 @@
   </div>
 
 
-  <div id="exp-flex-container">
+  <div id="exp-flex-container" class="all-container">
     <div id="about-container">
       <h1 class="section-header" id="about-header">About Me</h1>
 
@@ -55,10 +55,10 @@
         developer. I'm proficient with JavaScript, React amongst others and fully commited to continued learning to keep
         up to date with modern technologies.
         I love the the creativity and problem solving of web development and how theres always something new and
-        interesting to do and learn. Outside of coding I enjoy keeping fit and playing the guitar.
+        interesting to do and learn. Outside of coding I enjoy keeping fit, playing the guitar and cooking.
       </p>
     </div>
-    <div id="experience-container">
+    <div id="experience-container" class="all-container">
       <div class="img-container" id="html-container">
         <img class="exp-img" id="html-img" src="/demo/images/htmlLogo.png" alt="html">
         <p class="img-p">HTML</p>
@@ -86,16 +86,16 @@
         <p class="img-p">GitHub</p>
       </div>
       <div class="img-container" id="react-container">
-        <img class="exp-img" id="react-img" src="/demo/images/figma.png" alt="react">
-        <p class="img-p">Figma</p>
+        <img class="exp-img" id="react-img" src="/demo/images/reactLogo.png" alt="react">
+        <p class="img-p">React</p>
       </div>
       <div class="img-container" id="react-container">
-        <img class="exp-img" id="react-img" src="/demo/images/typescript.png" alt="react">
-        <p class="img-p">Typescript</p>
+        <img class="exp-img" id="react-img" src="/demo/images/reactLogo.png" alt="react">
+        <p class="img-p">React</p>
       </div>
       <div class="img-container" id="react-container">
-        <img class="exp-img" id="react-img" src="/demo/images/responsive-design.png" alt="react">
-        <p class="img-p">Responsive Design</p>
+        <img class="exp-img" id="react-img" src="/demo/images/reactLogo.png" alt="react">
+        <p class="img-p">react</p>
       </div>
     </div>
 
@@ -104,18 +104,10 @@
   </div>
   <div id="projects-container">
     <h1 class="section-header" id="projects-header">Projects</h1>
-    <div class="project-window" id="project-1-container">
-      <h4 class="project-text">This website is currently in development. Projects will be available to view soon. </h4>
-    </div>
-    <div class="project-window" id="project-2-container">
-      <h4 class="project-text">This website is currently in development. Projects will be available to view soon. </h4>
-    </div>
-    <div class="project-window" id="project-3-container">
-      <h4 class="project-text">This website is currently in development. Projects will be available to view soon. </h4>
-    </div>
-    <div class="project-window" id="project-4-container">
-      <h4 class="project-text">This website is currently in development. Projects will be available to view soon. </h4>
-    </div>
+    <div class="project-window" id="project-1-container"></div>
+    <div class="project-window" id="project-2-container"></div>
+    <div class="project-window" id="project-3-container"></div>
+    <div class="project-window" id="project-4-container"></div>
   </div>
 
   <div id="contact-outer-container">
@@ -125,14 +117,13 @@
     <div id="contact-container">
       <p id="contact-paragraph">If you have any questions or would like to work together leave your details below and
         I'll get back to you as soon as possible</p>
-      <form action="https://formsubmit.co/jamesogorman785@gmail.com" method="POST" id="contact-form">
+      <form action="https://formsubmit.co/jamesogorman785@gmail.com" method="post" id="contact-form">
         <input type="text" placeholder="Name" name="text" id="name" required>
         <input type="email" placeholder="Email" name="email" id="email" required>
         <input type="text" placeholder="Message" name="text" id="message" required>
         <!-- redirect back to my page|| use your domain name -->
-        <input type="hidden" name="_next" value="http://127.0.0.1:5500/demo/">
-        <!-- <input type="hidden" name="_next" value="#about-header"> -->
-        <input type="hidden" name="_captcha" value="false">
+        <!-- <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"> -->
+        <input type="hidden" name="_next" value="#about-header">
         <button id="btn">Submit</button>
 
       </form>

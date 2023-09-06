@@ -2,6 +2,7 @@
    HTML5 CSS Reset Minified - Eric Meyer
    ========================================================================== */
 
+
 html,
 body,
 div,
@@ -175,7 +176,7 @@ body {
   width: 100%;
   height: 100%;
   /* background: #111; */
-  background: #0D2130;
+  background: var(--midnight-green);
 }
 
 html {
@@ -237,9 +238,19 @@ canvas {
 #particles-js {
   width: 100%;
   height: 100%;
-  background-color: #0c0c50;
-  background-image: url(/demo/images/pexels-photo-176851.jpeg
-);
+  background-color: #063535;
+  background-color: #000022;
+  background-color: #0D2130;
+  background-color: #081621;
+
+  background-image: linear-gradient(to right, #141e30, #243b55);
+
+  background-image: linear-gradient(to right, #081621, #063535);
+
+  /* background-color: #040B10; */
+  /* background-color: #A3B18A; */
+  /* background-image: url(/demo/images/pexels-photo-176851.jpeg
+); */
 
   background-size: cover;
   background-position: 50% 50%;
@@ -254,9 +265,22 @@ canvas {
 /* ///////////////////////////////////////////////////////// */
 /* ///////////////////////////////////////////////////////// */
 
+:root {
+  --rich-black-dark: #081621;
+  --rich-black: #0D2130;
+  --anti-flash-white: #F3F3F4;
+  --gamboge: #F1A208;
+  --midnight-green: #063535;
+}
+
+
+
+
 body {
   overflow-x: hidden;
   box-sizing: border-box;
+  font-family: inter;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
 }
 
@@ -324,8 +348,6 @@ body {
 .header {
   display: flex;
   flex-direction: column;
-  /* top: 40%; */
-  /* left: 10vw; */
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -336,16 +358,20 @@ body {
   color: #FFFDF7;
   height: 100px;
   width: 85vw;
-  font-size: 4vw;
-
-
-  font-family: 'Courier New', Courier, monospace;
-  /* background-color: #13E8E9; */
+  font-size: 3vw;
 
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Open+Sans&family=Oswald&family=PT+Sans+Narrow&family=Permanent+Marker&display=swap');
+
+.header h1 {
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-weight: lighter;
+  font-size: 3.2vw;
+}
+
 #james {
-  color: #B91327;
+  color: #F1A208;
 }
 
 #header-top {
@@ -394,16 +420,18 @@ body {
   border-image-slice: 1;
 
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
 }
 
 .projects-btn:active {
   box-shadow: 5px 5px 2.5px 0px rgba(0, 0, 0, 0.75);
 }
 
+/* change the border color on the border to match the new color pallet */
 #navbar {
   height: 50px;
-  background-color: #0D2130;
-  /* border: solid 2px rgba(255, 255, 255, 0.342); */
+  background-color: var(--midnight-green);
+
 
   border: solid 5px transparent;
   border-image: linear-gradient(243deg, rgba(13, 33, 48, 1) 0%, rgba(255, 253, 247, 1) 47%, rgba(13, 33, 48, 1) 100%);
@@ -418,8 +446,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-color: #0d213094;
-
 }
 
 #navbar ul li a {
@@ -437,32 +463,14 @@ body {
 
 }
 
+
+
 .section-header {
   margin-top: 30px;
   margin-bottom: 20px;
-  color: #B91327;
+  color: var(--gamboge);
   font-size: 3.5em;
 }
-
-
-
-
-/* possible code to be deleted if page isnt affected  */
-/* #about-div {
-  padding-top: 50px;
-  background-color: #0D2130;
-  display: flex;
-  justify-content: center;
-} */
-
-/* #about-header {
-  color: #B91327;
-  font-size: 3.5em;
-} */
-
-
-
-
 
 
 #outer-container {
@@ -507,8 +515,6 @@ body {
 }
 
 
-
-
 #projects-container {
   display: flex;
   flex-direction: column;
@@ -517,9 +523,6 @@ body {
   width: 100vw;
   height: auto;
   min-height: 100px;
-  /* background-color: #B91327; */
-
-
 }
 
 
@@ -527,8 +530,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* font-size: 5vw;
-  color: #B91327; */
 }
 
 .project-window {
@@ -538,14 +539,8 @@ body {
   width: 90vw;
   height: 300px;
   min-height: 300px;
-  background-color: #063535;
+  background-color: var(--midnight-green);
   margin: 10px;
-
-  display: flex;
-  /* justify-content: center; */
-  text-align: center;
-  align-items: center;
-  color: #ccc;
 }
 
 .project-container:hover {
@@ -556,8 +551,7 @@ body {
   padding-top: 50px;
   color: #ccc;
   height: 100%;
-  background-color: #0D2130;
-  background-color: #475763;
+  background-color: var(--midnight-green);
 }
 
 #contact-div {
@@ -567,10 +561,6 @@ body {
   align-items: center;
 }
 
-/* #contact-header {
-  font-size: 5vw;
-  color: #B91327;
-} */
 
 #contact-container {
   display: flex;
@@ -636,10 +626,17 @@ input {
   border-image-slice: 1;
 
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+
 }
+
+
+
 
 #btn:active {
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.75);
+
+  background-color: rgba(131, 131, 131, 0.137);
+  /* border: solid 2px rgba(255, 255, 255, 0.801); */
 }
 
 
@@ -656,9 +653,9 @@ input {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 300px) {
-  .header {
-    font-size: 6vw;
-  }
+  /* .header h1 {
+    font-size: 3vw;
+  } */
 
   .projects-btn {
     font-size: 3vw;
@@ -681,7 +678,7 @@ input {
     width: 100vw;
     height: 100vh;
     min-height: 600px;
-    background-color: #0D2130;
+    background-color: var(--midnight-green);
     font-weight: 15px;
   }
 
@@ -698,8 +695,7 @@ input {
     height: 100vh;
     min-height: 600px;
     width: 100vw;
-    background-color: #0D2130;
-    /* background-color: #1c4564; */
+    background-color: var(--midnight-green);
   }
 
   #about-paragraph {
@@ -733,16 +729,7 @@ input {
     padding-top: 00px;
     color: #ccc;
     height: 100%;
-    background-color: #0D2130;
-    background-color: #d4d5d6;
-  }
-
-  .project-window {
-    display: flex;
-    /* justify-content: center; */
-    text-align: center;
-    align-items: center;
-    color: #ccc;
+    background-color: var(--midnight-green);
   }
 
 
@@ -752,7 +739,8 @@ input {
 /* i changes the min widths */
 @media only screen and (min-width: 600px) {
   .header {
-    font-size: 4vw;
+    /* font-size: 5vw; */
+    font-size: 4em;
   }
 
   .projects-btn {
@@ -761,7 +749,6 @@ input {
 
 
   #outer-container {
-    /* background-color: #13E8E9; */
     display: flex;
     flex-direction: column;
     padding-bottom: 200px;
@@ -779,8 +766,7 @@ input {
       padding-right: 20px; */
     width: 100vw;
     height: 50vh;
-    background-color: #0D2130;
-    /* background-color: #34556e; */
+    background-color: var(--midnight-green);
     font-weight: 15px;
   }
 
@@ -796,8 +782,7 @@ input {
     align-items: center;
     height: 50vh;
     width: 100vw;
-    background-color: #0D2130;
-    /* background-color: #1c4564; */
+    background-color: var(--midnight-green);
   }
 
   #about-paragraph {
@@ -830,30 +815,21 @@ input {
     padding-top: 50px;
     padding-bottom: 100px;
     height: 100%;
-    background-color: #0D2130;
+    background-color: var(--midnight-green);
   }
 
   .projects-container {
     padding-top: 50px;
     /* height: 300vh; */
     height: 100%;
-    background-color: #0D2130;
-    background-color: #6186a1;
+
   }
 }
 
 #contact-outer-container {
   color: #ccc;
   height: 100%;
-  background-color: #0D2130;
-}
-
-.project-window {
-  display: flex;
-  /* justify-content: center; */
-  text-align: center;
-  align-items: center;
-  color: #ccc;
+  background-color: var(--midnight-green);
 }
 
 
@@ -869,7 +845,6 @@ input {
     flex-direction: row;
     height: 100vh;
     /* width: 100vw; */
-    background-color: #13E8E9;
   }
 
   #about-container {
@@ -884,8 +859,7 @@ input {
     width: 50vw;
     height: 100vh;
     min-height: 600px;
-    background-color: #0D2130;
-    /* background-color: #34556e; */
+    background-color: var(--midnight-green);
     font-weight: 15px;
 
   }
@@ -902,8 +876,8 @@ input {
     height: 100vh;
     min-height: 600px;
     width: 50vw;
-    background-color: #0D2130;
-    /* background-color: #1c4564; */
+    /* background-color: #0D2130;
+    background-color: #1c4564; */
   }
 
   #about-paragraph {
@@ -928,12 +902,4 @@ input {
   .exp-img {
     height: 50px;
   }
-}
-
-.project-window {
-  display: flex;
-  /* justify-content: center; */
-  text-align: center;
-  align-items: center;
-  color: #ccc;
 }
