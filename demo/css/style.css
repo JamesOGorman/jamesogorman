@@ -274,6 +274,12 @@ canvas {
 }
 
 
+.sticky{
+  top: 0;
+  position:fixed;
+  width: 100vw;
+}
+
 
 
 body {
@@ -431,9 +437,10 @@ body {
 #navbar {
   height: 50px;
   background-color: var(--midnight-green);
+  background-color: var(--rich-black-dark);
 
 
-  border: solid 5px transparent;
+  border: solid 3px transparent;
   border-image: linear-gradient(243deg, rgba(13, 33, 48, 1) 0%, rgba(255, 253, 247, 1) 47%, rgba(13, 33, 48, 1) 100%);
   border-image-slice: 1;
 
@@ -684,8 +691,7 @@ input {
 
   #experience-container {
     display: grid;
-    grid-template-areas:
-      "topbar topbar topbar"
+    grid-template-areas: "topbar topbar topbar"
       "midbar midbar midbar"
       "btmbar btmbar btmbar";
     /* display: flex;
@@ -772,8 +778,7 @@ input {
 
   #experience-container {
     display: grid;
-    grid-template-areas:
-      "topbar topbar topbar"
+    grid-template-areas: "topbar topbar topbar"
       "midbar midbar midbar"
       "btmbar btmbar btmbar";
     /* display: flex;
@@ -866,8 +871,7 @@ input {
 
   #experience-container {
     display: grid;
-    grid-template-areas:
-      "topbar topbar topbar"
+    grid-template-areas: "topbar topbar topbar"
       "midbar midbar midbar"
       "btmbar btmbar btmbar";
     grid-column-end: auto;

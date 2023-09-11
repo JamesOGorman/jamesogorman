@@ -133,4 +133,25 @@ particlesJS('particles-js',
 );
 
 
-// adkjnfdg;dkfnjda;knjad
+
+
+
+const navBar = document.getElementById('navbar')
+const particlesJs = document.getElementById('particles-js')
+
+
+
+
+window.addEventListener('scroll', () => {
+  const scrolled = window.scrollY
+  console.log(scrolled);
+  if (scrolled == 677) {
+    navBar.classList.toggle('sticky')
+  } else if (scrolled < 677) { navBar.classList.remove('sticky') }
+})
+
+window.addEventListener('scroll', () => {
+  const scrolled = window.scrollY
+  console.log(scrolled);
+if (scrolled < 677) { navBar.classList.remove('sticky') }
+})
